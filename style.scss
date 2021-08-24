@@ -1,0 +1,72 @@
+//1173
+$secondary_color: #fcae61;
+$primary_color: #242f51;
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+a {
+    text-decoration: none;
+}
+@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: wrap;
+}
+.container {
+    max-width: 1173px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header-top {
+    padding-top: 107px;
+    &__inner {
+        @include flex(center,space-between);
+    }
+    &__menu {
+        &-list {
+            @include flex(center);
+        }
+        &-item {
+            margin-right: 37px;
+        }
+        &-link {
+            font-weight: 500;
+            color: $primary_color;
+        }
+        &-btnClick {
+            margin-left: 57px;
+            &-border {
+                color: white;
+                font-weight: 550;
+                padding: 18px 39px 18px 39px;
+                display: inline-block;
+                border: 1px solid;
+                border-radius: 70px;
+                background-color: #2500f9;
+            }
+        }
+    }
+}
+
+.header-menu {
+    display: flex;
+}
+
+.page_logo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: $primary_color;
+    &-name {
+        color: $secondary_color;
+    }
+}
