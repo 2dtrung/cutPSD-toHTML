@@ -55,4 +55,28 @@ a {
   .page_logo-name {
     color: #fcae61; }
 
+.banner {
+  padding-top: 56px; }
+
+.container-banner {
+  max-width: 1022px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.banner-text {
+  padding-top: 245px;
+  max-width: 516px;
+  color: #242f51; }
+  .banner-text__introduce {
+    font-size: 3.5rem; }
+
+.banner-picture {
+  max-height: 733px;
+  width: 366px; }
+
 /*# sourceMappingURL=style.css.map */
