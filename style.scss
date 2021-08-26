@@ -1,6 +1,7 @@
 //1173
 $secondary_color: #fcae61;
 $primary_color: #242f51;
+$shadow_color: #ecf2f9;
 * {
     box-sizing: border-box;
 }
@@ -89,8 +90,18 @@ a {
     &__introduce {
         font-size: 3.5rem;
     }
+    &__link {
+        @include flex(center,flex-start)
+    }
+
 }
 .banner-picture {
     max-height: 733px;
     width: 366px;
+}
+.banner-btn {
+    margin-left: 2.7rem;
+}
+.mobile-banner {
+    box-shadow: 0 6px 20px 10px rgba(235, 242, 249, 1);
 }

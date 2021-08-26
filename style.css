@@ -74,9 +74,20 @@ a {
   color: #242f51; }
   .banner-text__introduce {
     font-size: 3.5rem; }
+  .banner-text__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
 
 .banner-picture {
   max-height: 733px;
   width: 366px; }
+
+.banner-btn {
+  margin-left: 2.7rem; }
+
+.mobile-banner {
+  box-shadow: 0 6px 20px 10px #ebf2f9; }
 
 /*# sourceMappingURL=style.css.map */
