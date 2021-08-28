@@ -44,6 +44,10 @@ a {
       border: 1px solid;
       border-radius: 70px;
       background-color: #2500f9; }
+      .header-top__menu-btnClick-border:hover {
+        background-color: #fcae61;
+        border: 1px solid white;
+        transition: 0.3s; }
 
 .header-menu {
   display: flex; }
@@ -56,7 +60,8 @@ a {
     color: #fcae61; }
 
 .banner {
-  padding-top: 56px; }
+  margin-top: 56px;
+  height: 850px; }
 
 .container-banner {
   max-width: 1022px;
@@ -89,5 +94,49 @@ a {
 
 .mobile-banner {
   box-shadow: 0 6px 20px 10px #ebf2f9; }
+
+.sponsor {
+  margin-top: 111px; }
+
+.container-sponsor {
+  max-width: 933px;
+  margin: 0 auto; }
+
+.sponsor-text {
+  color: #242f51;
+  text-align: center; }
+
+.sponsor-logo__img {
+  width: 934px; }
+
+.feature {
+  margin-top: 170px; }
+
+.container-feature {
+  margin-left: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.feature-img {
+  width: 688px; }
+
+.feature-content__text {
+  color: #242f51; }
+  .feature-content__text h2 {
+    margin-top: 63px;
+    max-width: 283px; }
+  .feature-content__text p {
+    max-width: 426px; }
+
+.fast_perform__content p {
+  max-width: 260px; }
+
+.prototyping__content p {
+  max-width: 260px; }
+
+.editing__content p {
+  max-width: 260px; }
 
 /*# sourceMappingURL=style.css.map */

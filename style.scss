@@ -1,7 +1,6 @@
 //1173
-$secondary_color: #fcae61;
-$primary_color: #242f51;
-$shadow_color: #ecf2f9;
+@import './variable';
+
 * {
     box-sizing: border-box;
 }
@@ -21,11 +20,14 @@ a {
     justify-content: $justify;
     flex-wrap: wrap;
 }
+@mixin styleResponsive($margin, $paddingLeft,$paddingRight) {
+    margin: $margin;
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;
+}
 .container {
     max-width: 1173px;
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    @include styleResponsive(0 auto,2rem, 2rem);
 }
 
 .header-top {
@@ -54,7 +56,14 @@ a {
                 border: 1px solid;
                 border-radius: 70px;
                 background-color: #2500f9;
+                &:hover {
+                    background-color: $secondary_color;
+                    border: 1px solid white;
+                    transition: 0.3s;
+
+                }
             }
+            
         }
     }
 }
@@ -73,14 +82,13 @@ a {
 }
 
 .banner {
-    padding-top: 56px;
+    margin-top: 56px;
+    height: 850px;
 }
 
 .container-banner {
     max-width: 1022px;
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    @include styleResponsive(0 auto, 2rem, 2rem);
     @include flex(center,space-between);
 }
 .banner-text {
@@ -104,4 +112,69 @@ a {
 }
 .mobile-banner {
     box-shadow: 0 6px 20px 10px rgba(235, 242, 249, 1);
+}
+.sponsor {
+    margin-top: 111px;
+}
+.container-sponsor {
+    max-width: 933px;
+    margin: 0 auto;
+}
+
+.sponsor-text {
+    color: $primary_color;
+    text-align: center;
+}
+
+.sponsor-logo {
+    &__img {
+        width: 934px ;
+    }
+}
+
+.feature {
+    margin-top: 170px;
+}
+
+.container-feature {
+    margin-left: 100px;
+    @include flex(flex-start,flex-start);
+}
+
+.feature-img {
+    width: 688px;
+}
+
+.feature-content {
+    &__text {
+        color: $primary_color;
+        h2 {
+            margin-top: 63px;
+            max-width: 283px;
+        }
+        p {
+            max-width: 426px;
+        }
+    }
+}
+.fast_perform {
+    &__content {
+        p {
+            max-width: 260px;
+        }
+    }
+}
+.prototyping {
+    &__content {
+        p {
+            max-width: 260px;
+        }
+    }
+}
+.editing {
+    &__content {
+        p {
+            max-width: 260px;
+        }
+    }
 }
