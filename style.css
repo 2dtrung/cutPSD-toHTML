@@ -1,3 +1,6 @@
+.jackpot__intro-text p {
+  font-size: 8rem; }
+
 * {
   box-sizing: border-box; }
 
@@ -130,13 +133,46 @@ a {
   .feature-content__text p {
     max-width: 426px; }
 
+.fast_perform__content h3 {
+  color: #f55767; }
 .fast_perform__content p {
-  max-width: 260px; }
+  max-width: 260px;
+  color: #929396; }
 
+.prototyping__content h3 {
+  color: #2563ff; }
 .prototyping__content p {
-  max-width: 260px; }
+  max-width: 260px;
+  color: #929396; }
 
+.editing__content h3 {
+  color: #40975f; }
 .editing__content p {
-  max-width: 260px; }
+  max-width: 260px;
+  color: #929396; }
+
+.container-jackpot {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.jackpot__intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 45px; }
+  .jackpot__intro-banner {
+    max-width: 420px; }
+  .jackpot__intro-line {
+    margin-left: 30px;
+    width: 2px;
+    height: 145px;
+    border-left: 1px solid #929396; }
+  .jackpot__intro-text {
+    max-width: 406px; }
+    .jackpot__intro-text p {
+      color: #929396; }
 
 /*# sourceMappingURL=style.css.map */
